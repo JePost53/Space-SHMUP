@@ -46,7 +46,7 @@ public class Enemy3 : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         GameObject otherGO = other.gameObject;
         if (otherGO.GetComponent<ProjectileHero>() != null)

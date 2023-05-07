@@ -159,7 +159,7 @@ MonoBehaviour:
   rollMult: -45
   pitchMult: 30
   gameRestartDelay: 2
-  shieldLevel: 1
+  shieldLevel: 4
   projectilePrefab: {fileID: 6275826403319996988, guid: afe308d4d9770784ca8fa9056a58b7b6, type: 3}
   projectileSpeed: 50
   reloadTime: 0.25
@@ -674,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 8511496825742517997, guid: bbd40778eb6d24d479c4cc8831d2514f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511496825742517998, guid: bbd40778eb6d24d479c4cc8831d2514f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbd40778eb6d24d479c4cc8831d2514f, type: 3}

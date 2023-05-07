@@ -68,13 +68,17 @@ public class Hero2 : MonoBehaviour
         Transform rootT = other.gameObject.transform.root;
         GameObject go = rootT.gameObject;
         UnityEngine.Debug.Log(go.gameObject.name);
-        Destroy(go);
 
-        shieldLevel--;
-        if (shieldLevel <= 0)
+        if (go.tag == "Enemy")
         {
-            Main.HERO_DIED();
-            Destroy(this.gameObject);
+            Destroy(go);
+
+            shieldLevel--;
+            if (shieldLevel <= 0)
+            {
+                Main.HERO_DIED();
+                Destroy(this.gameObject);
+            }
         }
     }
 }
